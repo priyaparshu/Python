@@ -1,0 +1,11 @@
+import os
+l = os.path.join(os.getcwd(),"word.txt")
+def myfile():
+    with open(l,'a') as f:
+        while True:
+            s = input(">>")
+            if not s:
+                break
+            f.write(s + '\n')
+        print(s)
+myfile()
